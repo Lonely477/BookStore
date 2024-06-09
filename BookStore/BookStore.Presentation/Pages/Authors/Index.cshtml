@@ -1,0 +1,92 @@
+﻿@page
+@using BookStore.Presentation.Extensions
+@model BookStore.Presentation.Pages.Authors.IndexModel
+@{
+    ViewData["Title"] = "Authors List";
+}
+
+<h1>Authors</h1>
+
+@{
+    bool isAdmin = User.HasClaim("Role", "Admin");
+    if (isAdmin)
+    {
+        <p>
+            <a asp-page="./Create" class="btn btn-primary">Create New Author</a>
+        </p>
+    }
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Country</th>
+            <th>Books</th>
+            @if (isAdmin)
+            {
+                <th>Actions</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var author in Model.Authors)
+        {
+            <tr>
+                <td>@author.FullName</td>
+                <td>@author.Country.GetDescription()</td>
+                <td>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#books-@author.Id" aria-expanded="false" aria-controls="books-@author.Id">
+                        View Books
+                    </button>
+                    <div class="collapse" id="books-@author.Id">
+                        <ul class="list-group mt-2">
+                            @foreach (var book in author.Books)
+                            {
+                                <li class="list-group-item">@book.Title (@book.PublishDate.Year)</li>
+                            }
+                        </ul>
+                    </div>
+                </td>
+                @if (isAdmin)
+                {
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@author.Id" class="btn btn-warning">Edit</a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" onclick="setDeleteAuthorId(@author.Id)">Delete</button>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteModalLabel">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this author? All associated books will be deleted as well.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form method="post" asp-page-handler="Delete" id="deleteAuthorForm">
+                    <input type="hidden" name="id" id="deleteAuthorId" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function setDeleteAuthorId(id) {
+            document.getElementById('deleteAuthorId').value = id;
+        }
+    </script>
+}
