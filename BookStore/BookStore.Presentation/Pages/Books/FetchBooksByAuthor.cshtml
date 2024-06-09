@@ -1,0 +1,26 @@
+﻿@page
+@model BookStore.Presentation.Pages.Books.FetchBooksByAuthorModel
+@{
+    ViewData["Title"] = "Fetch Books";
+}
+
+<h2>Fetch Books by Author</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="authorLastName">Enter author's last name:</label>
+        <input type="text" class="form-control" id="authorLastName" name="AuthorLastName" asp-for="AuthorLastName" />
+    </div>
+    <button type="submit" class="btn btn-primary">Fetch Books</button>
+</form>
+
+@if (Model.BookTitles.Any())
+{
+    <h3>Books by @Model.AuthorLastName</h3>
+    <ul>
+        @foreach (var title in Model.BookTitles)
+        {
+            <li>@title</li>
+        }
+    </ul>
+}
