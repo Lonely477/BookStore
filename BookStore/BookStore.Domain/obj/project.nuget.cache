@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3i4eATsCzYw=",
+  "dgSpecHash": "sRCtZ2EtCvg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+  "projectFilePath": "C:\\Users\\filip\\Desktop\\STUDIA\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\filip\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.6\\microsoft.aspnetcore.authentication.jwtbearer.8.0.6.nupkg.sha512",
