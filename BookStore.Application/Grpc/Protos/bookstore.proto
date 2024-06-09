@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "BookStore.Application.Grpc";
+
+service BookStore {
+  rpc GetBooksByAuthor (AuthorRequest) returns (BooksResponse);
+}
+
+message AuthorRequest {
+  string lastName = 1;
+}
+
+message BooksResponse {
+  repeated string titles = 1;
+}
