@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|c:\\users\\filip\\documents\\github\\bookstore\\bookstore.presentation\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|solutionrelative:bookstore.presentation\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|c:\\users\\filip\\documents\\github\\bookstore\\bookstore.presentation\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|solutionrelative:bookstore.presentation\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|c:\\users\\filip\\documents\\github\\bookstore\\bookstore.presentation\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|solutionrelative:bookstore.presentation\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|c:\\users\\filip\\documents\\github\\bookstore\\bookstore.presentation\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{133836C1-9B5F-4896-9511-709CE8F52CE7}|BookStore.Presentation\\BookStore.Presentation.csproj|solutionrelative:bookstore.presentation\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore\\BookStore.Infrastructure\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BookStore\\BookStore.Infrastructure\\ApplicationDbContext.cs",
@@ -40,6 +52,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Presentation\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\Index.cshtml",
+              "RelativeToolTip": "BookStore.Presentation\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:14:08.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Presentation\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "BookStore.Presentation\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:14:05.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Presentation\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\Login.cshtml",
+              "RelativeToolTip": "BookStore.Presentation\\Pages\\Login.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:13:53.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\BookStore.Presentation\\Pages\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "BookStore.Presentation\\Pages\\Register.cshtml.cs",
