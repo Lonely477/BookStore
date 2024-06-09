@@ -1,2 +1,0 @@
-obj\Debug\net8.0/Bookstore.cs \
-obj\Debug\net8.0/BookstoreGrpc.cs: ../BookStore.Application/Grpc/Protos/bookstore.proto
